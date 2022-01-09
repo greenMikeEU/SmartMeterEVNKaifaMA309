@@ -138,12 +138,12 @@ while 1:
         client.publish("Smartmeter/StromL2", StromL2)
         client.publish("Smartmeter/StromL3", StromL3)
         client.publish("Smartmeter/Leistungsfaktor", Leistungsfaktor)
-    except BaseException as err:
-       print("Fehler beim Synchronisieren. Programm bitte ein weiteres mal Starten.")
-       print()
-       print("Fehler: ", format(err))
+    #except BaseException as err:
+    #   print("Fehler beim Synchronisieren. Programm bitte ein weiteres mal Starten.")
+    #   print()
+    #   print("Fehler: ", format(err))
 
-       sys.exit()
+    #   sys.exit()
 
 
 
