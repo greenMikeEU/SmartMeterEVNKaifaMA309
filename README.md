@@ -21,7 +21,7 @@ Smart Meter werden von der Netz NÖ GmbH eingebaut, auf Basis der gesetzlichen F
 
 
 ### Zähler Hersteller
-* Sagemcom Drehstromzähler T210-D
+* Kaifa Drehstromzähler MA309
 
 
 ### Unterstützung
