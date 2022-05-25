@@ -126,6 +126,15 @@ while 1:
 
     #MQTT
     if useMQTT:
+        connected = False
+        while not connected:
+            try:
+                client.reconnect()
+                connected = True
+            except:
+                print("Lost Connection to MQTT...Trying to reconnect in 2 Seconds")
+                time.sleep(2)
+
         client.publish("Smartmeter/WirkenergieP", WirkenergieP)
         client.publish("Smartmeter/WirkenergieN", WirkenergieN)
         client.publish("Smartmeter/MomentanleistungP", MomentanleistungP)
