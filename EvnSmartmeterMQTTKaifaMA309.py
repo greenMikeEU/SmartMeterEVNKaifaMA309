@@ -68,11 +68,11 @@ while 1:
     results_16 = soup.find_all('uint16')
     #print(results_16)
 
-    #Wirkenergie A+ in KiloWattstunden
-    WirkenergieP = int(str(results_32)[16:16+8],16)/1000
+    #Wirkenergie A+ in Wattstunden
+    WirkenergieP = int(str(results_32)[16:16+8],16)
 
-    #Wirkenergie A- in KiloWattstunden
-    WirkenergieN = int(str(results_32)[52:52+8],16)/1000
+    #Wirkenergie A- in Wattstunden
+    WirkenergieN = int(str(results_32)[52:52+8],16)
 
 
     #Momentanleistung P+ in Watt
