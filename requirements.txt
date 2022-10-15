@@ -1,0 +1,7 @@
+# Python Requirements
+gurux-dlms
+beautifulsoup4
+paho-mqtt
+lxml
+pyserial
+cryptography
