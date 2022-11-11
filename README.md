@@ -1,4 +1,15 @@
-# Alle Infos zu diesem Projekt befinden sich auf meinem Blog
+# Verbesserte Version
+* Serielle Schnittstelle ist richtig konfiguriert
+  * 2400 Baud, Gerade Parität (Fehlt im original Projekt noch immer)
+  * Timeout auf 30 Sekunden
+  * Serielle Schnittstelle wird exklusiv verwendet
+* Es ist sichergestellt, dass nur vollständig empfangene Packete decodiert werden.
+* Synchronisiert sich mit dem Stromzähler, so dass alle Packete lückenlos empfangen werden.
+* Erkennt diverse Fehler
+  * Falscher Schlüssel
+  * Leere Nachricht vom Stromzähler
+
+# Ursprünglicher Autor
 https://www.michaelreitbauer.at/blog
 
 
@@ -30,9 +41,6 @@ Smart Meter werden von der Netz NÖ GmbH eingebaut, auf Basis der gesetzlichen F
 ### Zähler Hersteller
 * Kaifa Drehstromzähler MA309
 
-
-### Unterstützung
-Spendenlink: https://www.paypal.me/greenMikeEU
 
 ## License
 
