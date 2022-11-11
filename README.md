@@ -7,6 +7,7 @@ Dieses Projekt ermöglicht es den Smartmeter der EVN (Netz Niederösterreich) ü
 Smart Meter werden von der Netz NÖ GmbH eingebaut, auf Basis der gesetzlichen Forderungen.
 
 ## Getting Started
+
 ### Voraussetzungen Hardware
 
 
@@ -17,8 +18,14 @@ Smart Meter werden von der Netz NÖ GmbH eingebaut, auf Basis der gesetzlichen F
     * Zählernummer
     * Handynummer
 
+### Voraussetzungen Software
 
-
+* Python 3, plus Libraries (siehe "requirements.txt")
+    
+    Installation der Python Libraries:
+    ```
+    pip install -r requirements.txt
+    ```
 
 ### Zähler Hersteller
 * Kaifa Drehstromzähler MA309
