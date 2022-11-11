@@ -12,7 +12,7 @@ from gurux_dlms.GXDLMSTranslatorMessage import GXDLMSTranslatorMessage
 from bs4 import BeautifulSoup
 
 # EVN Schlüssel eingeben zB. "36C66639E48A8CA4D6BC8B282A793BBB"
-evn_schluessel = "8654A50B407E6AD35144828293DDBF1F"
+evn_schluessel = "36C66639E48A8CA4D6BC8B282A793BBB"
 
 #MQTT Verwenden (True | False)
 useMQTT = False
@@ -57,7 +57,7 @@ def decode(daten_, tr_):
     xml = ""
     pdu = GXByteBuffer()
     tr_.completePdu = True
-    while tr.findNextFrame(msg, pdu):
+    while tr_.findNextFrame(msg, pdu):
         pdu.clear()
         xml += tr_.messageToXml(msg)
     #print(len(xml))
