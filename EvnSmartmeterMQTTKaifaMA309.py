@@ -16,6 +16,9 @@ evn_schluessel = "dein_Schlüssel"
 #MQTT Verwenden (True | False)
 useMQTT = False
 
+# Unentschlüsselte Daten in der Konsole ausgeben (True | False)
+printPlain = True
+
 #MQTT Broker IP adresse Eingeben ohne Port!
 mqttBroker = "192.168.1.10"
 mqttuser =""
@@ -51,6 +54,7 @@ ser = serial.Serial( port=comport,
 
 while 1:
     daten = ser.read(size=282).hex()
+    if(printPlain):
     print(daten)
 
     msg = GXDLMSTranslatorMessage()
