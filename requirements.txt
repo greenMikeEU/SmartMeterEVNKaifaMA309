@@ -4,4 +4,4 @@ beautifulsoup4
 paho-mqtt
 lxml
 pyserial
-cryptography
+cryptography==37.0.2
