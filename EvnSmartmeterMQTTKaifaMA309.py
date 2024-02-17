@@ -62,7 +62,7 @@ while 1:
         pdu.clear()
         xml += tr.messageToXml(msg)
 
-    soup = BeautifulSoup(xml, 'lxml')
+    soup = BeautifulSoup(xml, 'html5lib')
 
     results_32 = soup.find_all('uint32')
     results_16 = soup.find_all('uint16')
